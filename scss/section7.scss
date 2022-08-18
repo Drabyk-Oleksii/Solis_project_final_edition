@@ -1,0 +1,117 @@
+.section7_title{
+  font-family: $font-secondary;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+.section7_title_description{
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.8;
+  width: 400px;
+  margin-bottom: 50px;
+}
+.section7_block1{
+  background: url("../img/section7_block1.jpg")  0 0/100% 100% no-repeat;
+}
+.section7_block2{
+  background: url("../img/section7_block2.jpg")  0 0/100% 100% no-repeat;
+}
+.section7_block3{
+  background: url("../img/section7_block3.jpg")  0 0/100% 100% no-repeat;
+}
+.section7_blocks{
+  display: flex;
+  justify-content: space-between;
+}
+.section7_block1,.section7_block2,.section7_block3{
+  width: 370px;
+  height: 340px;
+  padding: 30px 40px 26px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.section7_block_description{
+  font-family: $font-secondary;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: $ht){
+  .section7_title{
+    font-size: 30px;
+    margin-top: 70px;
+  }
+  .section7_title_description{
+    font-size: 16px;
+  }
+  .section7_block1,.section7_block2,.section7_block3{
+    font-size: 16px;
+    min-height: 350px;
+    height: 40vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+@media screen and (max-width: $md){
+  .section7_blocks{
+    flex-direction: column;
+  }
+  .section7_block1,.section7_block2,.section7_block3{
+    width: 100%;
+    height: 30vw;
+    min-height: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: $dc){
+  .section7_title_description{
+    width: 90vw;
+  }
+  .section7_block1,.section7_block2,.section7_block3{
+    height: 50vw;
+    background: $background-default;
+    justify-content: flex-start;
+  }
+  .section7_block_description{
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: $ds){
+  .section7_block1,.section7_block2,.section7_block3{
+    font-size: 14px;
+    height: 50vw;
+  }
+  .section7_block_description{
+    margin-top: 20px;
+  }
+  .section7_title_description{
+    width: 95vw;
+  }
+}
+@media screen and (max-width: $dd){
+  .section7_block1,.section7_block2,.section7_block3{
+    font-size: 14px;
+    height: 91vw;
+}
+}

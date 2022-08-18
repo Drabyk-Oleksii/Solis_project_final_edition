@@ -1,0 +1,77 @@
+.ipad_video{
+  background: url("../img/svg/iPad.svg");
+  height: 601px;
+  width: 970px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video{
+  height: 539px;
+  width: 870px;
+  border-radius: 7px;
+}
+.camera{
+  margin-left: 9px;
+  margin-right: -5px;
+}
+.button{
+  margin-right: 14px;
+}
+.section5_title_description{
+  font-family: $font-secondary;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-left: 95px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.section5_description{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.8;
+  margin-left: 95px;
+}
+@media screen and (max-width: $ht){
+  .ipad_video{
+    min-height: 400px;
+    height: 60vw;
+    width: 80vw;
+    background: url("../img/svg/iPad.svg") 0 0/100% 100% no-repeat;
+  }
+  .video{
+    height: 43vw;
+    width: 69vw;
+    border-radius: 7px;
+  }
+  .section5_title_description,.section5_description{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: $dc){
+  .ipad_video{
+    width: 90vw;
+  }
+  .video{
+    width: 74vw;
+    height: 45vw;
+  }
+}
+@media screen and (max-width: $ds){
+  .ipad_video{
+  background: $background-default;
+}
+  .camera,.button{
+    display: none;
+  }
+  .video{
+    width: 90vw;
+    height: 60vw;
+  }
+}

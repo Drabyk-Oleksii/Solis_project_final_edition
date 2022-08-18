@@ -1,0 +1,129 @@
+.section6_background{
+  background: url("../img/block4_image.jpg")no-repeat;
+  height: 540px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section6_block{
+  height: 450px;
+  width: 770px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: #161926;
+}
+.section6_block_title{
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section6_block1,.section6_block2,.section6_block3,.section6_block4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section6_block3{
+  margin-left: 50px;
+}
+.section6_block4{
+  display: flex;
+  align-items: flex-end;
+}
+.section6_block_description{
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+.join_now{
+  border: 1px solid #515773;
+  height: 90px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background: #FFFFFF;
+    transition: all 1s;
+    cursor: pointer;
+  }
+}
+.join_now_button{
+  color: #53F3CD;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 13px;
+    left: 8.2%;
+    top: 55.83%;
+    background: #53F3CD;
+    opacity: 0.3;
+}
+}
+@media screen and (max-width: $ht){
+  .section6_background{
+    min-height: 400px;
+    max-height: 50vw;
+    background: url("../img/block4_image.jpg") 0 0/100% 100% no-repeat;
+    justify-content: center;
+  }
+  .section6_block{
+    min-height: 350px;
+    max-height: 40vw;
+    width: 80vw;
+  }
+}
+@media screen and (max-width: $md){
+  .section6_block_title{
+    font-size: 20px;
+  }
+  .section6_block1,.section6_block2,.section6_block3,.section6_block4{
+    font-size: 16px;
+  }
+  .section6_block_description{
+    text-align: left;
+    display: inline;
+  }
+}
+@media screen and (max-width: $dc){
+  .section6_background{
+    background: $background-default;
+  }
+  .section6_block{
+    width: 90vw;
+    max-height: 60vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background: $background-default;
+  }
+  .section6_block3{
+    margin: 0;
+    padding: 0 15px;
+  }
+  .section6_block_title{
+    text-align: center;
+  }
+  .join_now{
+    border: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: $ds){
+  .section6_background{
+    margin-top: 20px;
+  }
+  .section6_block_description{
+    text-align: center;
+  }
+}
+
